@@ -4,6 +4,12 @@ A modern, high-performance developer website for **Rehman Ali**, designed faithf
 
 ---
 
+## 🌐 Live Website & Repository
+
+- **Live Website**: [https://abdulrehmanb119-maker.github.io/rehman-ali-developer-portfolio/](https://abdulrehmanb119-maker.github.io/rehman-ali-developer-portfolio/)
+- **GitHub Repository**: [https://github.com/abdulrehmanb119-maker/rehman-ali-developer-portfolio](https://github.com/abdulrehmanb119-maker/rehman-ali-developer-portfolio)
+
+---
 ## 🌟 Key Highlights & Features
 
 - **Neumorphic / Soft UI Aesthetic**:
