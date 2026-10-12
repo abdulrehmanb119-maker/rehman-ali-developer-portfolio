@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REHMAN ALI | Full Stack Developer & Systems Architect</title>
+  <meta name="description" content="Professional Developer Portfolio of Rehman Ali. Full Stack Developer, Systems Architect, and Neumorphic Soft UI Specialist.">
+  <meta name="keywords" content="Rehman Ali, Developer, Full Stack Developer, Neumorphic UI, Web Development, React, Node.js, Python, Pakistan">
+  <meta name="author" content="Rehman Ali">
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%232563eb'/><text x='50%' y='55%' font-size='50' font-weight='800' fill='white' font-family='sans-serif' dominant-baseline='middle' text-anchor='middle'>RA</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Lexend', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#0b1329',
+              blue: '#2563eb',
+              coral: '#e15b49',
+              canvas: '#eef2f6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Neumorphic Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#eef2f6] text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- ========================================================================
+       TOP NOTIFICATION BAR / AVAILABILITY STATUS
+       ======================================================================== -->
+  <div class="bg-[#0b1329] text-white py-2 px-4 text-xs font-medium tracking-wide">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="status-dot-pulse"></span>
+        <span><strong>REHMAN ALI</strong> &bull; Available for Enterprise Projects, Full-Stack Contracts & Consulting</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-slate-300">
+        <a href="mailto:abdulrehmanb119@gmail.com" class="hover:text-white transition flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          abdulrehmanb119@gmail.com
+        </a>
+        <span>&bull;</span>
+        <a href="https://wa.me/923252951875" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          03252951875
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN NAVIGATION (NEUMORPHIC HEADER)
+       ======================================================================== -->
+  <header class="sticky top-0 z-40 bg-[#eef2f6]/90 backdrop-blur-md border-b border-white/60 py-3.5 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Brand Logo / Monogram -->
+      <a href="#" class="flex items-center gap-3 group text-decoration-none">
+        <div class="w-11 h-11 rounded-2xl bg-white flex items-center justify-center font-extrabold text-blue-600 text-lg shadow-[4px_4px_10px_rgba(166,180,200,0.35),-4px_-4px_10px_rgba(255,255,255,0.9)] border border-white/80 group-hover:scale-105 transition-all">
+          RA
+        </div>
+        <div>
+          <div class="font-extrabold text-slate-900 tracking-tight text-lg leading-tight flex items-center gap-2">
+            REHMAN ALI
+            <span class="badge-success text-[10px] py-0 px-1.5 hidden sm:inline-flex">PRO</span>
+          </div>
+          <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+            Full Stack Developer
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden md:flex items-center gap-2 bg-[#f1f5f9] p-1.5 rounded-2xl shadow-[inset_2px_2px_5px_rgba(166,180,200,0.3),inset_-2px_-2px_5px_rgba(255,255,255,0.9)] border border-slate-200/60">
+        <a href="#about" class="px-4 py-1.5 rounded-xl text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-[3px_3px_8px_rgba(166,180,200,0.25),-3px_-3px_8px_rgba(255,255,255,0.9)] transition">About</a>
+        <a href="#skills" class="px-4 py-1.5 rounded-xl text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-[3px_3px_8px_rgba(166,180,200,0.25),-3px_-3px_8px_rgba(255,255,255,0.9)] transition">Skills</a>
+        <a href="#projects" class="px-4 py-1.5 rounded-xl text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-[3px_3px_8px_rgba(166,180,200,0.25),-3px_-3px_8px_rgba(255,255,255,0.9)] transition">Projects</a>
+        <a href="#architecture" class="px-4 py-1.5 rounded-xl text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-[3px_3px_8px_rgba(166,180,200,0.25),-3px_-3px_8px_rgba(255,255,255,0.9)] transition">Architecture</a>
+        <a href="#contact" class="px-4 py-1.5 rounded-xl text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-[3px_3px_8px_rgba(166,180,200,0.25),-3px_-3px_8px_rgba(255,255,255,0.9)] transition">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/923252951875" target="_blank" class="neumorphic-btn-whatsapp text-xs py-2 px-3.5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#contact" class="neumorphic-btn-primary text-xs py-2 px-4">
+          <span>Hire Me</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-toggle" class="md:hidden neumorphic-icon-btn w-10 h-10" aria-label="Toggle Navigation">
+        <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden md:hidden">
+    <div class="fixed right-0 top-0 bottom-0 w-72 bg-[#eef2f6] p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-8">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center text-sm">RA</div>
+            <span class="font-extrabold text-slate-900 text-base">REHMAN ALI</span>
+          </div>
+          <button id="mobile-menu-close" class="neumorphic-icon-btn w-9 h-9" aria-label="Close menu">
+            <svg class="w-5 h-5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-3">
+          <a href="#about" class="mobile-nav-link neumorphic-btn justify-start text-sm py-2.5">About Rehman</a>
+          <a href="#skills" class="mobile-nav-link neumorphic-btn justify-start text-sm py-2.5">Technical Stack</a>
+          <a href="#projects" class="mobile-nav-link neumorphic-btn justify-start text-sm py-2.5">Featured Projects</a>
+          <a href="#architecture" class="mobile-nav-link neumorphic-btn justify-start text-sm py-2.5">Architecture</a>
+          <a href="#contact" class="mobile-nav-link neumorphic-btn justify-start text-sm py-2.5">Contact & Hire</a>
+        </nav>
+      </div>
+      <div class="flex flex-col gap-3 pt-6 border-t border-slate-200">
+        <a href="https://wa.me/923252951875" target="_blank" class="neumorphic-btn-whatsapp justify-center text-sm py-2.5">WhatsApp 03252951875</a>
+        <a href="mailto:abdulrehmanb119@gmail.com" class="neumorphic-btn justify-center text-xs py-2">abdulrehmanb119@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         HERO SECTION (High Impact + Interactive Neumorphic Terminal)
+         ======================================================================== -->
+    <section class="py-14 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-white/80 shadow-[3px_3px_8px_rgba(166,180,200,0.3),-3px_-3px_8px_rgba(255,255,255,0.9)] text-xs font-semibold text-blue-700">
+            <span class="w-2 h-2 rounded-full bg-blue-600 animate-ping"></span>
+            <span>ENTERPRISE FULL STACK ARCHITECT</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
+            Engineering Resilient Systems & <span class="text-blue-600">Neumorphic Portals</span>
+          </h1>
+
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+            Hello, I am <strong class="text-slate-900 font-semibold">REHMAN ALI</strong> — a dedicated Full Stack Developer and Systems Architect. I build tactile enterprise applications, high-throughput cloud backends, and responsive management portals with clean architecture, zero-collision design, and rock-solid stability.
+          </p>
+
+          <!-- Contact Quick Access Pill Container -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <!-- Email Pill with 1-Click Copy -->
+            <div class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl shadow-[3px_3px_8px_rgba(166,180,200,0.3),-3px_-3px_8px_rgba(255,255,255,0.9)] border border-white/90">
+              <svg class="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              <a href="mailto:abdulrehmanb119@gmail.com" class="text-xs font-semibold text-slate-800 hover:text-blue-600 transition">abdulrehmanb119@gmail.com</a>
+              <button class="btn-copy p-1 text-slate-400 hover:text-blue-600 transition ml-1" data-copy="abdulrehmanb119@gmail.com" title="Copy email">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              </button>
+            </div>
+
+            <!-- WhatsApp Pill with 1-Click Copy & Direct Chat -->
+            <div class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl shadow-[3px_3px_8px_rgba(166,180,200,0.3),-3px_-3px_8px_rgba(255,255,255,0.9)] border border-white/90">
+              <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <a href="https://wa.me/923252951875" target="_blank" class="text-xs font-semibold text-slate-800 hover:text-emerald-600 transition">03252951875</a>
+              <button class="btn-copy p-1 text-slate-400 hover:text-emerald-600 transition ml-1" data-copy="03252951875" title="Copy phone">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#projects" class="neumorphic-btn-primary py-3 px-6 text-sm">
+              <span>Explore My Work</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </a>
+            <a href="https://wa.me/923252951875" target="_blank" class="neumorphic-btn-whatsapp py-3 px-6 text-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Instant WhatsApp</span>
+            </a>
+            <a href="#contact" class="neumorphic-btn py-3 px-6 text-sm">
+              <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              <span>Start Project Discussion</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Neumorphic Terminal -->
+        <div class="lg:col-span-5">
+          <div class="terminal-window">
+            
+            <!-- Terminal Title Bar -->
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span class="text-xs text-slate-400 font-mono tracking-wide">rehman@enterprise-portal:~</span>
+              <span class="badge-success text-[10px] py-0 px-1.5 font-mono">LIVE</span>
+            </div>
+
+            <!-- Terminal Quick Commands Pill Row -->
+            <div class="bg-slate-900/90 px-4 py-2 border-b border-slate-800 flex items-center gap-1.5 overflow-x-auto">
+              <span class="text-[11px] text-slate-400 font-mono flex-shrink-0">Quick:</span>
+              <button class="term-quick-btn px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 hover:bg-slate-700 text-sky-300 transition" data-cmd="skills">skills</button>
+              <button class="term-quick-btn px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 hover:bg-slate-700 text-sky-300 transition" data-cmd="projects">projects</button>
+              <button class="term-quick-btn px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 hover:bg-slate-700 text-sky-300 transition" data-cmd="contact">contact</button>
+              <button class="term-quick-btn px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 hover:bg-slate-700 text-emerald-300 transition" data-cmd="hire">hire</button>
+              <button class="term-quick-btn px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 hover:bg-slate-700 text-yellow-300 transition" data-cmd="clear">clear</button>
+            </div>
+
+            <!-- Terminal Screen / Body -->
+            <div id="term-body" class="terminal-body space-y-2">
+              <div class="text-slate-400">
+                <span class="text-emerald-400 font-bold">Welcome to Rehman Ali's Interactive Developer Console!</span><br>
+                Type a command below or tap the buttons above. Try <span class="text-yellow-300 font-semibold underline">help</span> or <span class="text-sky-300 font-semibold underline">skills</span>.
+              </div>
+              <div>
+                <span class="terminal-prompt">guest@rehman-dev:~$</span> <span class="terminal-command">whoami</span>
+              </div>
+              <div class="terminal-output text-slate-300">
+                &gt; Name: <strong class="text-white">REHMAN ALI</strong><br>
+                &gt; Role: <strong class="text-sky-300">Full Stack Developer & Systems Architect</strong><br>
+                &gt; Core: React, Node.js, Python, PostgreSQL, Neumorphic UI, Firebase<br>
+                &gt; Status: Open for exciting projects & enterprise systems
+              </div>
+            </div>
+
+            <!-- Terminal Interactive Prompt Input -->
+            <div class="bg-slate-900 p-3 border-t border-slate-800 flex items-center gap-2">
+              <span class="text-sky-400 font-mono text-sm font-semibold">&gt;</span>
+              <input type="text" id="term-input" class="terminal-input" placeholder="Type 'skills', 'contact', 'projects'..." autocomplete="off">
+              <span class="text-[10px] text-slate-500 font-mono">Press Enter ↵</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         TELEMETRY / KPI STATS CARDS (Exact Neumorphic Soft UI Extrusion)
+         ======================================================================== -->
+    <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- KPI 1 -->
+        <div class="neumorphic-card p-6 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Enterprise Systems</span>
+            <div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm shadow-[inset_1px_1px_3px_rgba(166,180,200,0.3)]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            </div>
+          </div>
+          <div>
+            <div class="text-3xl font-extrabold text-slate-900 tracking-tight">30+</div>
+            <div class="text-xs text-slate-500 mt-1 font-medium">Shipped Web & Portal Solutions</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-emerald-600 font-semibold">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+            <span>100% Production Tested</span>
+          </div>
+        </div>
+
+        <!-- KPI 2 -->
+        <div class="neumorphic-card p-6 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Dev Experience</span>
+            <div class="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm shadow-[inset_1px_1px_3px_rgba(166,180,200,0.3)]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+          </div>
+          <div>
+            <div class="text-3xl font-extrabold text-slate-900 tracking-tight">5+ Years</div>
+            <div class="text-xs text-slate-500 mt-1 font-medium">Full Stack Architecture</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-blue-600 font-semibold">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>Frontend & Backend Mastery</span>
+          </div>
+        </div>
+
+        <!-- KPI 3 -->
+        <div class="neumorphic-card p-6 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Code Quality</span>
+            <div class="w-8 h-8 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-sm shadow-[inset_1px_1px_3px_rgba(166,180,200,0.3)]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+          </div>
+          <div>
+            <div class="text-3xl font-extrabold text-slate-900 tracking-tight">99.9%</div>
+            <div class="text-xs text-slate-500 mt-1 font-medium">Uptime & Stability Guarantee</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-purple-600 font-semibold">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span>Zero-Collision Architecture</span>
+          </div>
+        </div>
+
+        <!-- KPI 4 -->
+        <div class="neumorphic-card p-6 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Client Response</span>
+            <div class="w-8 h-8 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-sm shadow-[inset_1px_1px_3px_rgba(166,180,200,0.3)]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+          </div>
+          <div>
+            <div class="text-3xl font-extrabold text-slate-900 tracking-tight">&lt; 1 Hour</div>
+            <div class="text-xs text-slate-500 mt-1 font-medium">WhatsApp / Email Turnaround</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 text-[11px] text-amber-600 font-semibold">
+            <span class="status-dot-pulse"></span>
+            <span>Immediate Project Onboarding</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ABOUT REHMAN ALI SECTION
+         ======================================================================== -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left: Detailed Bio Card -->
+        <div class="lg:col-span-8 neumorphic-card p-8 sm:p-10 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="badge-vault text-xs font-semibold uppercase">Profile & Philosophy</span>
+              <span class="text-xs text-slate-400 font-semibold">&bull; Architecting for Impact</span>
+            </div>
+            
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4">
+              Building Software That Feels Tactile, Reliable, and Scalable
+            </h2>
+
+            <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+              <p>
+                I am <strong class="text-slate-900">Rehman Ali</strong>, a seasoned full stack developer dedicated to building enterprise-grade applications with exceptional design integrity. From intricate legal dockets and tax calculation suites to scalable microservice backends, I merge high-level system architecture with pixel-perfect user experiences.
+              </p>
+              <p>
+                My signature design philosophy revolves around the <strong class="text-blue-600 font-semibold">Neumorphic Soft UI</strong> standard (as seen in our enterprise portal) — utilizing soft dual-cast lighting and recessed insets to reduce visual fatigue, emphasize vital KPIs, and deliver a calming yet powerful workspace for high-stakes business operations.
+              </p>
+            </div>
+
+            <!-- Pillars Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+              <div class="neumorphic-inset p-4">
+                <div class="flex items-center gap-2.5 font-bold text-slate-900 text-sm mb-1">
+                  <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                  Clean Architecture
+                </div>
+                <p class="text-xs text-slate-500 leading-normal">
+                  Decoupled layers, modular state management, and type-safe data flows that scale cleanly over time.
+                </p>
+              </div>
+
+              <div class="neumorphic-inset p-4">
+                <div class="flex items-center gap-2.5 font-bold text-slate-900 text-sm mb-1">
+                  <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                  Neumorphic UX Ergonomics
+                </div>
+                <p class="text-xs text-slate-500 leading-normal">
+                  Tactile dual-shadow depth, clear visual hierarchy, and zero text or button clipping on any viewport.
+                </p>
+              </div>
+
+              <div class="neumorphic-inset p-4">
+                <div class="flex items-center gap-2.5 font-bold text-slate-900 text-sm mb-1">
+                  <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+                  Robust Database Design
+                </div>
+                <p class="text-xs text-slate-500 leading-normal">
+                  High-performance relational and document stores (PostgreSQL, Firebase Firestore, MongoDB) with strict index hygiene.
+                </p>
+              </div>
+
+              <div class="neumorphic-inset p-4">
+                <div class="flex items-center gap-2.5 font-bold text-slate-900 text-sm mb-1">
+                  <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                  Direct Client Communication
+                </div>
+                <p class="text-xs text-slate-500 leading-normal">
+                  Transparent milestones, real-time WhatsApp updates, and rapid iteration from concept to launch.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+              <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span>Based in Pakistan &bull; Serving Local & Global Clients</span>
+            </div>
+            <a href="#contact" class="neumorphic-btn text-xs py-2 px-4">
+              <span>View Contact Details &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Developer Identity & Contact Quick Card -->
+        <div class="lg:col-span-4 neumorphic-card p-8 flex flex-col justify-between">
+          <div>
+            <!-- Developer Avatar / Emblem -->
+            <div class="flex flex-col items-center text-center pb-6 border-b border-slate-100">
+              <div class="w-24 h-24 rounded-3xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white font-extrabold text-3xl flex items-center justify-center shadow-[6px_6px_16px_rgba(166,180,200,0.4),-6px_-6px_16px_rgba(255,255,255,0.95)] border-2 border-white mb-4">
+                RA
+              </div>
+              <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">REHMAN ALI</h3>
+              <p class="text-xs font-semibold text-blue-600 uppercase tracking-wider mt-0.5">Software Engineer</p>
+              
+              <div class="mt-3 flex items-center gap-1.5 badge-success text-xs py-1 px-3">
+                <span class="status-dot-pulse"></span>
+                <span>Active & Accepting Work</span>
+              </div>
+            </div>
+
+            <!-- Direct Contact Specs -->
+            <div class="space-y-4 py-6">
+              
+              <!-- Email Card -->
+              <div class="neumorphic-inset p-3.5 flex items-center justify-between">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <div class="w-7 h-7 rounded-lg bg-white flex items-center justify-center text-blue-600 shadow-xs flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <div class="truncate">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase">Email Address</div>
+                    <a href="mailto:abdulrehmanb119@gmail.com" class="text-xs font-semibold text-slate-800 hover:text-blue-600 transition truncate block">
+                      abdulrehmanb119@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <button class="btn-copy p-1.5 text-slate-400 hover:text-blue-600 transition flex-shrink-0" data-copy="abdulrehmanb119@gmail.com" title="Copy email">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </button>
+              </div>
+
+              <!-- Phone / WhatsApp Card -->
+              <div class="neumorphic-inset p-3.5 flex items-center justify-between">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <div class="w-7 h-7 rounded-lg bg-white flex items-center justify-center text-emerald-600 shadow-xs flex-shrink-0">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  </div>
+                  <div class="truncate">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase">Mobile / WhatsApp</div>
+                    <a href="https://wa.me/923252951875" target="_blank" class="text-xs font-semibold text-slate-800 hover:text-emerald-600 transition truncate block">
+                      03252951875
+                    </a>
+                  </div>
+                </div>
+                <button class="btn-copy p-1.5 text-slate-400 hover:text-emerald-600 transition flex-shrink-0" data-copy="03252951875" title="Copy phone">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Direct WhatsApp Trigger -->
+          <a href="https://wa.me/923252951875" target="_blank" class="neumorphic-btn-whatsapp justify-center w-full py-3 text-sm">
+            <span>Chat on WhatsApp Directly</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         TECHNICAL SKILLS & STACK MATRIX (Categorized Interactive Tabs)
+         ======================================================================== -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="badge-info text-xs uppercase font-bold tracking-wider">Proficiencies & Tooling</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
+          Modern Technical Stack & Capabilities
+        </h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-2">
+          Equipped with modern engineering practices, robust frameworks, and production-tested toolchains.
+        </p>
+      </div>
+
+      <!-- Skill Category Tabs -->
+      <div class="flex justify-center mb-8">
+        <div class="inline-flex p-1.5 bg-[#f1f5f9] rounded-2xl shadow-[inset_2px_2px_5px_rgba(166,180,200,0.3),inset_-2px_-2px_5px_rgba(255,255,255,0.9)] border border-slate-200/60 overflow-x-auto max-w-full">
+          <button class="skill-tab-btn neumorphic-pill active" data-tab="frontend">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <span>Frontend & UI/UX</span>
+          </button>
+          <button class="skill-tab-btn neumorphic-pill" data-tab="backend">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+            <span>Backend & APIs</span>
+          </button>
+          <button class="skill-tab-btn neumorphic-pill" data-tab="databases">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+            <span>Cloud & Databases</span>
+          </button>
+          <button class="skill-tab-btn neumorphic-pill" data-tab="devops">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path></svg>
+            <span>DevOps & Tools</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Panels Container -->
+      <div class="mt-4">
+        
+        <!-- Tab 1: Frontend -->
+        <div id="tab-frontend" class="skill-tab-panel block">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">React & Next.js</h4>
+                <span class="badge-success text-xs">Expert</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Hooks, Context, SSR/SSG, Next App Router, state management (Zustand/Redux).</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Neumorphic & Soft UI</h4>
+                <span class="badge-vault text-xs">Signature</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Dual-cast shadow mathematics, extruded cards, tactile inset forms, zero collision UX.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-purple-600 h-2 rounded-full" style="width: 98%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Tailwind CSS & Modern CSS</h4>
+                <span class="badge-success text-xs">Expert</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Tailwind 3/4, responsive grid/flexbox, custom design tokens, active print engine.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">JavaScript & TypeScript</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Modern ES6+, async/await concurrency, strict type checking, robust error handling.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Data Visualization</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Recharts, Chart.js, smooth spline area graphs, KPI sparklines, timeline charts.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Accessible HTML5 & UX</h4>
+                <span class="badge-success text-xs">Expert</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Semantic tags, native &lt;dialog&gt;, ARIA patterns, keyboard navigation, fast CWV.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-emerald-600 h-2 rounded-full" style="width: 94%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab 2: Backend -->
+        <div id="tab-backend" class="skill-tab-panel hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Node.js & Express</h4>
+                <span class="badge-success text-xs">Expert</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">REST APIs, middleware pipelines, authentication, file processing, background jobs.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Python (FastAPI & Django)</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">High performance asynchronous APIs, Pydantic data schemas, automated scripts.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Security & Authentication</h4>
+                <span class="badge-vault text-xs">High Security</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">JWT token pairs, RBAC permission roles, bcrypt hashing, CORS, rate limiting.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-purple-600 h-2 rounded-full" style="width: 94%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Real-Time & WebSockets</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Socket.io, live notification broadcasters, event-driven updates, presence status.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 86%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Document & PDF Engines</h4>
+                <span class="badge-success text-xs">Specialized</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Automated invoice generation, legal cause lists, tax certificate generation, Excel export.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-emerald-600 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">WhatsApp & SMS Gateways</h4>
+                <span class="badge-warning text-xs">Integrations</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Automated client notices, case hearing alerts, invoice dispatch via messaging APIs.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-amber-600 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab 3: Databases -->
+        <div id="tab-databases" class="skill-tab-panel hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Firebase & Firestore</h4>
+                <span class="badge-success text-xs">Expert</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">NoSQL schema optimization, Firestore Security Rules, Cloud Functions, Firebase Auth.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 96%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">PostgreSQL</h4>
+                <span class="badge-success text-xs">Expert</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Relational modeling, indexing, foreign keys, transaction ACID compliance, migrations.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">MySQL</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Structured databases for enterprise ERP, legal registries, and accounting data.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">MongoDB</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Aggregation pipelines, Mongoose modeling, dynamic case documents and audit logs.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Redis In-Memory Caching</h4>
+                <span class="badge-warning text-xs">Intermediate</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Key-value caching, session storage, rate limiting, and fast pub/sub messaging.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-amber-600 h-2 rounded-full" style="width: 82%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Cloud Storage & Buckets</h4>
+                <span class="badge-vault text-xs">Secure Storage</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Client document vaults, signed URLs, secure attachments, encrypted storage policies.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-purple-600 h-2 rounded-full" style="width: 93%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tab 4: DevOps -->
+        <div id="tab-devops" class="skill-tab-panel hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Git & Version Control</h4>
+                <span class="badge-success text-xs">Expert</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Branching strategies, CI/CD automated test workflows, pull request reviews.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: 96%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Docker & Containers</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Dockerfile optimization, multi-stage builds, docker-compose local dev environments.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Google Cloud & Vercel</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Edge serverless deployment, Firebase hosting, DNS configuration, SSL setups.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Linux Administration</h4>
+                <span class="badge-info text-xs">Advanced</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Ubuntu/Debian server setup, systemd services, Nginx reverse proxy, SSH keys.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-sky-600 h-2 rounded-full" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Postman & API Testing</h4>
+                <span class="badge-success text-xs">Expert</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Automated contract testing, mocking endpoints, integration suites.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-emerald-600 h-2 rounded-full" style="width: 92%"></div>
+              </div>
+            </div>
+
+            <div class="neumorphic-card p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-900 text-base">Figma to Code Pipeline</h4>
+                <span class="badge-vault text-xs">Pixel-Perfect</span>
+              </div>
+              <p class="text-xs text-slate-500 mb-4">Translating UI specs directly into production Neumorphic components with zero drift.</p>
+              <div class="w-full bg-slate-200 rounded-full h-2 shadow-[inset_1px_1px_2px_rgba(0,0,0,0.15)]">
+                <div class="bg-purple-600 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FEATURED PROJECTS SHOWCASE (Including the Flagship Neumorphic Portal)
+         ======================================================================== -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="badge-vault text-xs uppercase font-bold tracking-wider">Enterprise Portfolio</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
+          Flagship Systems & Production Projects
+        </h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-2">
+          Real-world platforms built for legal firms, financial institutions, and corporate operations.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="flex justify-center mb-8">
+        <div class="inline-flex p-1.5 bg-[#f1f5f9] rounded-2xl shadow-[inset_2px_2px_5px_rgba(166,180,200,0.3),inset_-2px_-2px_5px_rgba(255,255,255,0.9)] border border-slate-200/60 overflow-x-auto max-w-full">
+          <button class="project-filter-pill neumorphic-pill active" data-filter="all">All Systems</button>
+          <button class="project-filter-pill neumorphic-pill" data-filter="enterprise">Enterprise Portals</button>
+          <button class="project-filter-pill neumorphic-pill" data-filter="fullstack">Full Stack Apps</button>
+          <button class="project-filter-pill neumorphic-pill" data-filter="automation">Automation</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- PROJECT 1: Flagship Neumorphic Portal -->
+        <div class="project-card neumorphic-card p-7 sm:p-8 flex flex-col justify-between" data-category="enterprise fullstack">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-success text-xs">Flagship Live Portal</span>
+              <span class="text-xs font-mono font-semibold text-slate-400">React &bull; Soft UI &bull; Firebase</span>
+            </div>
+
+            <h3 class="text-2xl font-extrabold text-slate-900 tracking-tight mb-2">
+              TaxLegal Enterprise Portal & Case Management
+            </h3>
+
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Complete law practice and tax consulting management portal designed with the full Neumorphic Soft UI design system. Features live case docket trackers, active tax filing status indicators, client document vault, multi-role RBAC, billing invoices, and active printable A4 reports.
+            </p>
+
+            <!-- Feature Tags -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Neumorphic Soft UI</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">React 18</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Firebase Firestore</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Recharts Splines</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Print Engine</span>
+            </div>
+          </div>
+
+          <div class="pt-5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-emerald-600 flex items-center gap-1.5">
+              <span class="status-dot-pulse"></span>
+              <span>Production Deployed</span>
+            </span>
+            <button class="btn-view-project neumorphic-btn text-xs py-2 px-4" data-project="portal">
+              <span>View Case Study</span>
+              <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: FinPulse Accounting -->
+        <div class="project-card neumorphic-card p-7 sm:p-8 flex flex-col justify-between" data-category="enterprise fullstack">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-vault text-xs">Financial Systems</span>
+              <span class="text-xs font-mono font-semibold text-slate-400">Node.js &bull; React &bull; PostgreSQL</span>
+            </div>
+
+            <h3 class="text-2xl font-extrabold text-slate-900 tracking-tight mb-2">
+              FinPulse Enterprise Accounting & Ledger
+            </h3>
+
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              High-precision double-entry bookkeeping and client balance reconciliation platform designed for tax consultants and law practices. Handles invoice lifecycles, automated tax withholding calculations, partial payment splits, and multi-year financial statements.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Double-Entry Ledger</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">PostgreSQL</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Automated Tax Logic</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">PDF Receipts</span>
+            </div>
+          </div>
+
+          <div class="pt-5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-blue-600 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>Audit-Ready Architecture</span>
+            </span>
+            <button class="btn-view-project neumorphic-btn text-xs py-2 px-4" data-project="finpulse">
+              <span>View Case Study</span>
+              <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: CloudFlow API -->
+        <div class="project-card neumorphic-card p-7 sm:p-8 flex flex-col justify-between" data-category="fullstack">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-info text-xs">Cloud Architecture</span>
+              <span class="text-xs font-mono font-semibold text-slate-400">Node &bull; Python &bull; Redis</span>
+            </div>
+
+            <h3 class="text-2xl font-extrabold text-slate-900 tracking-tight mb-2">
+              CloudFlow Microservices & Sync Hub
+            </h3>
+
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              A distributed backend service orchestration layer designed for multi-tenant enterprise platforms. Provides low-latency WebSockets streaming, scheduled cloud database backups, automated health telemetry, and strict rate-limited security tokens.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">FastAPI & Express</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Docker Containers</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">WebSockets</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Redis Cache</span>
+            </div>
+          </div>
+
+          <div class="pt-5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-sky-600 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              <span>Sub-50ms Latency</span>
+            </span>
+            <button class="btn-view-project neumorphic-btn text-xs py-2 px-4" data-project="cloudflow">
+              <span>View Case Study</span>
+              <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Internal Workflow Automation -->
+        <div class="project-card neumorphic-card p-7 sm:p-8 flex flex-col justify-between" data-category="automation enterprise">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="badge-warning text-xs">Process Automation</span>
+              <span class="text-xs font-mono font-semibold text-slate-400">Nayatel &bull; Legal Workflows</span>
+            </div>
+
+            <h3 class="text-2xl font-extrabold text-slate-900 tracking-tight mb-2">
+              Corporate Workflow & Cause List Automation
+            </h3>
+
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Automated legal docket and corporate workflow suite for Nayatel cases and law firm operations. Automatically compiles daily court cause lists, dispatches automated client alerts via WhatsApp, and provides full digital audit trails.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">WhatsApp Gateway</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Automated Reminders</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Cause List Generator</span>
+              <span class="neumorphic-inset px-3 py-1 text-xs font-semibold text-slate-700">Audit Trail</span>
+            </div>
+          </div>
+
+          <div class="pt-5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-amber-600 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>Saved 75% Manual Hours</span>
+            </span>
+            <button class="btn-view-project neumorphic-btn text-xs py-2 px-4" data-project="automation">
+              <span>View Case Study</span>
+              <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         NEUMORPHIC SYSTEM ARCHITECTURE PHILOSOPHY
+         ======================================================================== -->
+    <section id="architecture" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="neumorphic-card p-8 sm:p-12">
+        <div class="max-w-3xl mb-8">
+          <span class="badge-vault text-xs uppercase font-bold tracking-wider">Ergonomic Architecture</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-2">
+            Why Neumorphism for Enterprise Applications?
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
+            Standard flat design often creates eye strain and ambiguity during long business sessions. Our calibrated Soft UI architecture delivers natural tactile affordance and visual depth without clutter.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="neumorphic-inset p-6">
+            <div class="w-10 h-10 rounded-2xl bg-white flex items-center justify-center text-blue-600 font-extrabold text-lg mb-4 shadow-[3px_3px_8px_rgba(166,180,200,0.3)]">
+              01
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">Dual Shadow Affordance</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Calculated light and dark shadow pairs (<code class="text-blue-600 font-mono">6px 6px 16px</code> &amp; <code class="text-blue-600 font-mono">-6px -6px 16px</code>) make interactive buttons instantly obvious and satisfying to click.
+            </p>
+          </div>
+
+          <div class="neumorphic-inset p-6">
+            <div class="w-10 h-10 rounded-2xl bg-white flex items-center justify-center text-emerald-600 font-extrabold text-lg mb-4 shadow-[3px_3px_8px_rgba(166,180,200,0.3)]">
+              02
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">Recessed Wells & Insets</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Form inputs and search bars sit comfortably inset into the canvas, clearly distinguishing data entry fields from elevated action buttons.
+            </p>
+          </div>
+
+          <div class="neumorphic-inset p-6">
+            <div class="w-10 h-10 rounded-2xl bg-white flex items-center justify-center text-purple-600 font-extrabold text-lg mb-4 shadow-[3px_3px_8px_rgba(166,180,200,0.3)]">
+              03
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">Active Print Precision</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              When printing invoices or dockets, the active print engine strips ambient shadows and delivers razor-sharp black &amp; white document typography for legal ink printing.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CONTACT & HIRE SECTION (Direct Email, WhatsApp & Contact Form)
+         ======================================================================== -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="badge-success text-xs uppercase font-bold tracking-wider">Start A Conversation</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
+          Let’s Build Your Next Great System
+        </h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-2">
+          Whether you need a full enterprise web application, custom portal, or API architecture, reach out directly.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Direct Contact Details & WhatsApp Direct -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="neumorphic-card p-8">
+            <h3 class="text-xl font-extrabold text-slate-900 tracking-tight mb-2">Direct Contact Data</h3>
+            <p class="text-xs text-slate-500 leading-relaxed mb-6">
+              You can contact me anytime via WhatsApp or Email. Messages are answered rapidly.
+            </p>
+
+            <div class="space-y-4">
+              
+              <!-- Email Item -->
+              <div class="neumorphic-inset p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-blue-600 shadow-sm flex-shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <div class="truncate">
+                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wide block">Email Address</span>
+                    <a href="mailto:abdulrehmanb119@gmail.com" class="text-sm font-semibold text-slate-800 hover:text-blue-600 transition truncate block">
+                      abdulrehmanb119@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <button class="btn-copy p-2 text-slate-400 hover:text-blue-600 transition flex-shrink-0" data-copy="abdulrehmanb119@gmail.com" title="Copy email">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </button>
+              </div>
+
+              <!-- WhatsApp Item -->
+              <div class="neumorphic-inset p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-emerald-600 shadow-sm flex-shrink-0">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  </div>
+                  <div class="truncate">
+                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wide block">Mobile & WhatsApp</span>
+                    <a href="https://wa.me/923252951875" target="_blank" class="text-sm font-semibold text-slate-800 hover:text-emerald-600 transition truncate block">
+                      03252951875
+                    </a>
+                  </div>
+                </div>
+                <button class="btn-copy p-2 text-slate-400 hover:text-emerald-600 transition flex-shrink-0" data-copy="03252951875" title="Copy phone">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- WhatsApp Direct Button -->
+            <div class="mt-6 pt-6 border-t border-slate-100">
+              <a href="https://wa.me/923252951875" target="_blank" class="neumorphic-btn-whatsapp w-full justify-center py-3.5 text-sm">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Direct WhatsApp Chat (03252951875)</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Working SLA Box -->
+          <div class="neumorphic-card p-6 bg-gradient-to-br from-white to-blue-50/40">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-sm shadow-md">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Professional Work Guarantee</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Prompt milestone delivery, structured contracts, and post-launch support.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Contact Form -->
+        <div class="lg:col-span-7 neumorphic-card p-8 sm:p-10">
+          <h3 class="text-xl font-extrabold text-slate-900 tracking-tight mb-1">Send a Project Inquiry</h3>
+          <p class="text-xs text-slate-500 mb-6">
+            Fill in your details below. You can send your inquiry straight to my WhatsApp or my Email inbox.
+          </p>
+
+          <form id="contact-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-name" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Your Name</label>
+                <input type="text" id="contact-name" class="neumorphic-input" placeholder="e.g. Tariq Mehmood" required>
+              </div>
+              <div>
+                <label for="contact-email" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Your Email / Phone</label>
+                <input type="text" id="contact-email" class="neumorphic-input" placeholder="e.g. client@company.com" required>
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-service" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Project Scope</label>
+              <select id="contact-service" class="neumorphic-input">
+                <option value="Enterprise Portal Development">Enterprise Portal / Soft UI Portal Development</option>
+                <option value="Full Stack Web Application">Full Stack Web Application (React / Node / Python)</option>
+                <option value="Legal / Tax Management System">Legal / Tax Case Management Solution</option>
+                <option value="API & Cloud Microservices">API & Cloud Microservices Hub</option>
+                <option value="UI/UX Modernization & Redesign">UI/UX Modernization & Redesign</option>
+                <option value="General Consultation & Hiring">General Consultation & Hiring</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">Project Details / Message</label>
+              <textarea id="contact-message" rows="4" class="neumorphic-input" placeholder="Briefly describe your requirements, timeline, or objectives..." required></textarea>
+            </div>
+
+            <!-- Action Dispatch Buttons -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
+              <button type="button" id="btn-send-wa" class="neumorphic-btn-whatsapp justify-center py-3 text-sm">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Send via WhatsApp</span>
+              </button>
+              
+              <button type="button" id="btn-send-email" class="neumorphic-btn-primary justify-center py-3 text-sm">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <span>Send via Email</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+     MODAL DIALOG: CASE STUDY DETAILS (Native <dialog> with Backdrop)
+     ======================================================================== -->
+  <dialog id="project-modal" class="neumorphic-dialog">
+    <div class="dialog-content">
+      
+      <!-- Close Button -->
+      <button id="modal-close-btn" class="absolute top-5 right-5 neumorphic-icon-btn w-9 h-9" aria-label="Close dialog">
+        <svg class="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="mb-4 pr-10">
+        <div class="flex items-center gap-2 mb-1.5">
+          <span id="modal-badge" class="badge-success text-xs">Verified</span>
+          <span id="modal-tag" class="text-xs font-semibold text-slate-400">Enterprise</span>
+        </div>
+        <h3 id="modal-title" class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">Project Title</h3>
+      </div>
+
+      <!-- Description -->
+      <p id="modal-desc" class="text-slate-600 text-sm leading-relaxed mb-6"></p>
+
+      <!-- Architecture Stack Section -->
+      <div class="mb-6">
+        <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2.5 flex items-center gap-2">
+          <span>Technology & Architecture Decisions</span>
+        </h4>
+        <ul id="modal-architecture" class="space-y-2 neumorphic-inset p-4"></ul>
+      </div>
+
+      <!-- Highlights Section -->
+      <div class="mb-6">
+        <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2.5 flex items-center gap-2">
+          <span>Key Deliverables & Business Impact</span>
+        </h4>
+        <ul id="modal-highlights" class="space-y-2 neumorphic-inset p-4"></ul>
+      </div>
+
+      <!-- Footer Action -->
+      <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+        <span class="text-xs text-slate-400 font-mono">Developed by Rehman Ali</span>
+        <a href="https://wa.me/923252951875" target="_blank" class="neumorphic-btn-whatsapp text-xs py-2 px-4">
+          <span>Discuss Similar Solution</span>
+        </a>
+      </div>
+
+    </div>
+  </dialog>
+
+  <!-- ========================================================================
+       MODERN FOOTER
+       ======================================================================== -->
+  <footer class="bg-white border-t border-slate-200/80 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-blue-600 text-white font-extrabold flex items-center justify-center text-sm shadow-sm">
+          RA
+        </div>
+        <div>
+          <span class="font-extrabold text-slate-900 text-sm tracking-tight block">REHMAN ALI</span>
+          <span class="text-xs text-slate-500">Full Stack Developer &bull; Neumorphic Design Systems</span>
+        </div>
+      </div>
+
+      <div class="text-xs text-slate-500 text-center sm:text-right space-y-1">
+        <div>Email: <a href="mailto:abdulrehmanb119@gmail.com" class="font-semibold text-slate-700 hover:text-blue-600 transition">abdulrehmanb119@gmail.com</a></div>
+        <div>Mobile/WhatsApp: <a href="https://wa.me/923252951875" target="_blank" class="font-semibold text-slate-700 hover:text-emerald-600 transition">03252951875</a></div>
+        <div class="text-slate-400 pt-1">&copy; 2026 Rehman Ali. All rights reserved.</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="js/main.js"></script>
+</body>
+</html>

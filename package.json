@@ -1,0 +1,19 @@
+{
+  "name": "rehman-ali-developer-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Neumorphic Full-Stack Developer Website for Rehman Ali",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "developer-portfolio",
+    "neumorphism",
+    "soft-ui",
+    "rehman-ali",
+    "full-stack"
+  ],
+  "author": "Rehman Ali <abdulrehmanb119@gmail.com>",
+  "license": "MIT"
+}
